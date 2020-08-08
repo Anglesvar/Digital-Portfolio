@@ -1,0 +1,47 @@
+{
+    "backgroundType": "gradient",
+    "plainBackgroundMode": "daylight",
+    "gradientColors": "#EE7752, #E73C7E, #23A6D5, #23D5AB",
+    "FirstName": "Anglesvar",
+    "MiddleName": "Chandrasekar",
+    "LastName": "Appiya",
+    "devDesc": "| Engineer | Programmer | Full Stack Developer  ",
+    "icons": [{
+            "id": 0,
+            "image": "fa-github",
+            "url": "https://github.com/anglesvar",
+            "style": "socialicons"
+        },
+        {
+            "id": 1,
+            "image": "fa-facebook",
+            "url": "https://www.facebook.com/anglesvar.cheenu",
+            "style": "socialicons"
+        },
+        {
+            "id": 2,
+            "image": "fa-instagram",
+            "url": "https://www.instagram.com/anglesvar",
+            "style": "socialicons"
+        },
+        {
+            "id": 3,
+            "image": "fa-linkedin",
+            "url": "https://www.linkedin.com/in/anglesvar-chandrasekar-appiya-24338a110/",
+            "style": "socialicons"
+        }
+    ],
+    "aboutHeading": "About Me",
+    "showInstaProfilePic": true,
+    "instaLink": "https://www.instagram.com/",
+    "instaUsername": "anglesvar",
+    "instaQuerry": "/?__a=1",
+    "aboutDescription": "Hi! I'm Anglesvar Chandrasekar Appiya, I'm a B.Tech Graduate from TamilNadu, India. I'm a Developer with 3 months of experience in Web Application development. I’m currently a Software Engineer at Chubb Business Service, India and a former Intern at Mallow Technologies, pvt. ltd. I follow autodidactism methodology and I'm always in hunger for new inspiring technologies. ❤",
+    "projectHeading": "My Works",
+    "gitHubLink": "https://api.github.com/users/",
+    "gitHubUsername": "anglesvar",
+    "gitHubQuerry": "/repos?sort=created&direction=desc",
+    "projectsLength": 4,
+    "showNavigationbar": true,
+    "showBlog": true
+}
