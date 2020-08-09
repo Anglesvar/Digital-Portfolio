@@ -16,7 +16,7 @@ const Skills = () => {
         params={{
           "particles": {
             "number": {
-              "value": 20,
+              "value": 10,
               "density": {
                 "enable": true,
                 "value_area": 800
@@ -45,7 +45,7 @@ const Skills = () => {
               "value": "#CCC"
             },
             "size": {
-              "value": 30,
+              "value": 15,
               "random": false,
               "anim": {
                 "enable": true,
@@ -57,7 +57,7 @@ const Skills = () => {
           },
           "retina_detect": false
         }} />
-      <div id="skills" className="jumbotron jumbotron-fluid m-0" style={{ paddingTop: 170, height: 850, background: "linear-gradient( rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.8) ),url('https://chubb-spotify.s3.ap-south-1.amazonaws.com/new1.jpg')" }}>
+      <div id="skills" className="jumbotron jumbotron-fluid m-0" style={{ paddingTop: 170, background: "linear-gradient( rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.8) ),url('https://chubb-spotify.s3.ap-south-1.amazonaws.com/new1.jpg')" }}>
         <div className="container ">
 
           {/* <div className="col-5 d-none d-lg-inline align-self-center">
@@ -67,40 +67,40 @@ const Skills = () => {
           <div className="d-inline align-self-center">
             <h1 className="display-4 text-center color-white lead">Skills</h1>
             <div className="row">
-              <div className="col color-white">
+              <div className="col-12 color-white">
                 <br />
                 <p className="lead">JavaScipt
-                  <ProgressBar animated variant="success" now={90} label={`90%`} style={{ width: '490px' }} />
+                  <ProgressBar animated variant="success" now={90} label={`90%`} />
                 </p>
                 <p className="lead">C#
-                  <ProgressBar animated  variant="primary" now={80} label={`80%`} style={{ width: '490px', backgroundColor: 'white' }} />
+                  <ProgressBar animated  variant="primary" now={80} label={`80%`} style={{ backgroundColor: 'white' }} />
                 </p>
                 <p className="lead">C/C++
-                  <ProgressBar animated variant="info" now={75} label={`75%`} style={{ width: '490px', backgroundColor: 'white' }} />
+                  <ProgressBar animated variant="info" now={75} label={`75%`} style={{ backgroundColor: 'white' }} />
                 </p>
                 <p className="lead">TypeScript
-                  <ProgressBar animated variant="info" now={70} label={`70%`} style={{ width: '490px', backgroundColor: 'white' }} />
+                  <ProgressBar animated variant="info" now={70} label={`70%`} style={{ backgroundColor: 'white' }} />
                 </p>
                 <p className="lead">Python
-                  <ProgressBar animated variant="danger" now={40} label={`40%`} style={{ width: '490px', backgroundColor: 'white' }} />
+                  <ProgressBar animated variant="danger" now={40} label={`40%`} style={{ backgroundColor: 'white' }} />
                 </p>
               </div>
-              <div className="col color-white ">
+              <div className="col-12 color-white ">
                 <br />
                 <p className="lead">HTML/CSS
-                <ProgressBar animated variant="success" now={90} label={`90%`} style={{ width: '490px', backgroundColor: 'white' }} />
+                <ProgressBar animated variant="success" now={90} label={`90%`} style={{ backgroundColor: 'white' }} />
                 </p>
                 <p className="lead">SQL
-                <ProgressBar animated variant="primary" now={80} label={`80%`} style={{ width: '490px', backgroundColor: 'white' }} />
+                <ProgressBar animated variant="primary" now={80} label={`80%`} style={{ backgroundColor: 'white' }} />
                 </p>
                 <p className="lead">Bootstrap/Materialize/Angular-Material
-                  <ProgressBar animated variant="info" now={70} label={`70%`} style={{ width: '490px', backgroundColor: 'white' }} />
+                  <ProgressBar animated variant="info" now={70} label={`70%`} style={{ backgroundColor: 'white' }} />
                 </p>
                 <p className="lead">Angular
-                <ProgressBar animated variant="primary" now={80} label={`80%`} style={{ width: '490px', backgroundColor: 'white' }} />
+                <ProgressBar animated variant="primary" now={80} label={`80%`} style={{ backgroundColor: 'white' }} />
                 </p>
                 <p className="lead">React
-                <ProgressBar animated variant="warning" now={50} label={`50%`} style={{ width: '490px', backgroundColor: 'white' }} />
+                <ProgressBar animated variant="warning" now={50} label={`50%`} style={{ backgroundColor: 'white' }} />
                 </p>
 
               </div>

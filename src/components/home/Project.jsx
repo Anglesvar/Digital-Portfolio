@@ -47,7 +47,7 @@ const Project = () => {
     params={{
 	    "particles": {
 	        "number": {
-	            "value": 360,
+	            "value": 150,
 	            "density": {
 	                "enable": true
 	            }

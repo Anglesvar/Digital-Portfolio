@@ -1,6 +1,5 @@
 <!-- PROJECT LOGO -->
 <br />
-    <p>Template Credit <a href="https://hashirshoaeb.com">Hashir Shoaeb</a></p>
 
 ## Quick Project Setup
 

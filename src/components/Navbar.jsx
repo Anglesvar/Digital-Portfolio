@@ -21,7 +21,7 @@ const Navbar = (props) => {
       } `}
     >
       <a className="navbar-brand" href={process.env.PUBLIC_URL + "/#home"}>
-        <img src="../angular.png" height="50"></img>
+        {`<${FirstName} />`}
       </a>
       <button
         className="navbar-toggler"
@@ -62,7 +62,7 @@ const Navbar = (props) => {
               target="_blank"
               rel="noreferrer noopener"
             >
-              Resume
+              <b>Resume</b>
             </a>
           </li>
           <li className="nav-item">
@@ -70,7 +70,7 @@ const Navbar = (props) => {
               className="nav-link lead"
               href={process.env.PUBLIC_URL + "/#aboutme"}
             >
-              About
+              <b>About</b>
             </a>
           </li>
         </ul>
