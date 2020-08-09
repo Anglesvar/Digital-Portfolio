@@ -43,5 +43,5 @@
     "gitHubQuerry": "/repos?sort=created&direction=desc",
     "projectsLength": 4,
     "showNavigationbar": true,
-    "showBlog": true
+    "showBlog": false
 }
