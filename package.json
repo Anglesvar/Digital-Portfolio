@@ -1,7 +1,7 @@
 {
-    "name": "developers-portfolio",
-    "description": "A personal static website/portfolio template hosted with GitHub Pages, built to showcase my recent projects.",
-    "homepage": "",
+    "name": "Digital-Portfolio",
+    "description": "An open source digital Portfolio designed with ReactJSX and with different ParticlesJS background on all sections.",
+    "homepage": "https://anglesvar.github.io/Digital-Portfolio",
     "version": "1.0.0",
     "private": true,
     "author": {
