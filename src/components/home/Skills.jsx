@@ -12,7 +12,6 @@ const Skills = () => {
 
     <div>
       <Particles style={{ zIndex: 0, position: 'absolute'}}
-      height={'151%'}
         params={{
           "particles": {
             "number": {
@@ -41,21 +40,19 @@ const Skills = () => {
                 { src: 'https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Visual_Studio_Code_1.35_icon.svg/1024px-Visual_Studio_Code_1.35_icon.svg.png', height: 20, width: 20 }
               ]
             },
-            "color": {
-              "value": "#CCC"
-            },
+            
             "size": {
-              "value": 15,
+              "value": 25,
               "random": false,
               "anim": {
                 "enable": true,
                 "speed": 4,
                 "size_min": 10,
-                "sync": false
+                "sync": true
               }
             }
           },
-          "retina_detect": false
+          "retina_detect": true
         }} />
       <div id="skills" className="jumbotron jumbotron-fluid m-0" style={{ paddingTop: 170, background: "linear-gradient( rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.8) ),url('https://chubb-spotify.s3.ap-south-1.amazonaws.com/new1.jpg')" }}>
         <div className="container ">
@@ -67,7 +64,7 @@ const Skills = () => {
           <div className="d-inline align-self-center">
             <h1 className="display-4 text-center color-white lead">Skills</h1>
             <div className="row">
-              <div className="col-12 color-white">
+              <div className="col-lg-6 col-md-12 col-sm-12 color-white">
                 <br />
                 <p className="lead">JavaScipt
                   <ProgressBar animated variant="success" now={90} label={`90%`} />
@@ -85,7 +82,7 @@ const Skills = () => {
                   <ProgressBar animated variant="danger" now={40} label={`40%`} style={{ backgroundColor: 'white' }} />
                 </p>
               </div>
-              <div className="col-12 color-white ">
+              <div className="col-lg-6 col-md-12 col-sm-12 color-white ">
                 <br />
                 <p className="lead">HTML/CSS
                 <ProgressBar animated variant="success" now={90} label={`90%`} style={{ backgroundColor: 'white' }} />

@@ -100,7 +100,7 @@ const Project = () => {
           <h1 className="display-4 pb-5" style={{color: "white", fontWeight: "700"}}>{projectHeading}</h1>
           <div className="row">
             {projectsArray.map((project) => (
-			  <ProjectCard key={project.id} id={project.id} value={project}/>
+			  <ProjectCard  key={project.id} id={project.id} value={project}/>
             ))}
           </div>
         </div>

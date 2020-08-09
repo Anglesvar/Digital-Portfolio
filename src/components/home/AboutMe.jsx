@@ -30,7 +30,7 @@ const AboutMe = () => {
         console.log(response.data.graphql);
         return setInstaProfilePic(
           "https://chubb-spotify.s3.ap-south-1.amazonaws.com/download.png"
-          );
+        );
       })
       .catch((error) => {
         // handle error
@@ -43,20 +43,20 @@ const AboutMe = () => {
   };
 
   return (
-    <div id="aboutme" className=" m-0 " style={{height:"630px",paddingTop:"30px"}}>
-     <Particles 
-      style={{color: "black",position: "absolute", height:"50%"}}
-        params={{ 
-          particles: { 
-            number: { 
-              value: 200, 
-              density: { 
-                enable: true, 
-                value_area: 1000, 
-              } 
+    <div id="aboutme" className=" m-0 " style={{ height: "630px", paddingTop: "30px" }}>
+      <Particles
+        style={{ color: "black", position: "absolute", height: "50%" }}
+        params={{
+          particles: {
+            number: {
+              value: 20,
+              density: {
+                enable: true,
+                value_area: 1000,
+              }
             },
             "color": {
-              "value": ["#BD10E0","#B8E986","#50E3C2","#FFD300","#E86363"]
+              "value": ["#BD10E0", "#B8E986", "#50E3C2", "#FFD300", "#E86363"]
             },
             "shape": {
               "type": "circle",
@@ -71,7 +71,7 @@ const AboutMe = () => {
               "anim": {
                 "enable": true,
                 "speed": 1,
-                "opacity_min": 0.1,
+                "opacity_min": 1,
                 "sync": false
               }
             },
@@ -89,7 +89,7 @@ const AboutMe = () => {
               "enable": true,
               "distance": 150,
               "color": "#c8c8c8",
-              "opacity": 0.4,
+              "opacity": 0.9,
               "width": 1
             },
             "move": {
@@ -147,8 +147,8 @@ const AboutMe = () => {
             }
           },
           "retina_detect": true
-        }} 
-      /> 
+        }}
+      />
       <div className="container container-fluid p-5">
         <div className="row">
           <div className={`col-lg-${showInsta ? "7" : "12"}`}>
@@ -157,14 +157,15 @@ const AboutMe = () => {
             {resumeURL && (
               <p className="lead text-center">
                 <a
-                  className="btn btn-outline-dark btn-lg"
                   href={Pdf}
                   target="_blank"
                   rel="noreferrer noopener"
                   role="button"
                   aria-label="Resume/CV"
                 >
-                  Resume
+                  <div class="btn-custom btn-two">
+                    <span>Resume</span>
+                  </div>
                 </a>
               </p>
             )}

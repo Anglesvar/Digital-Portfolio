@@ -15,7 +15,6 @@ import Navbar from "./components/Navbar";
 import { Blog } from "./components/blog/Blog";
 import BlogPost from "./components/blog/BlogPost";
 import Skills from "./components/home/Skills";
-import Particles from "react-particles-js";
 const Home = () => {
     return ( <
         Fragment >
