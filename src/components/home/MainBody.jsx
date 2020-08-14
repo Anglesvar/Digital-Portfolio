@@ -44,6 +44,7 @@ const MainBody = () => {
               target="_blank"
               rel="noopener noreferrer"
               href={icon.url}
+              className="social-icon-rotate"
               aria-label={`My ${icon.image.split("-")[1]}`}
             >
               <i

@@ -23,6 +23,9 @@ const Navbar = (props) => {
       <a className="navbar-brand" href={process.env.PUBLIC_URL + "/#home"}>
         {`<${FirstName} />`}
       </a>
+      <a href="#" className="logo">
+         
+        </a>
       <button
         className="navbar-toggler"
         type="button"
@@ -62,7 +65,7 @@ const Navbar = (props) => {
               target="_blank"
               rel="noreferrer noopener"
             >
-              <b>Resume</b>
+              Resume
             </a>
           </li>
           <li className="nav-item">
@@ -70,7 +73,7 @@ const Navbar = (props) => {
               className="nav-link lead"
               href={process.env.PUBLIC_URL + "/#aboutme"}
             >
-              <b>About</b>
+              About
             </a>
           </li>
         </ul>

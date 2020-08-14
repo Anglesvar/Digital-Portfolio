@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Marck+Script&display=swap');
 .bgstyle {
     background: linear-gradient(136deg, #7b10e0, #B8E986, #50E3C2, #ecf0f1, #E86363);
     /* background: linear-gradient( 136deg, #4484ce, #1ad7c0, #ff9b, #9b59b6, #ff7f7f, #ecf0f1); */
@@ -7,6 +8,11 @@
     -o-animation: AnimationName 70s ease infinite;
     animation: AnimationName 70s ease infinite;
     height: 10 0%;
+}
+
+.navbar {
+    font-family: 'Marck Script', cursive !important;
+    font-size: 32px;
 }
 
 .cardBgColor {
@@ -125,12 +131,14 @@
     }
 }
 
-.card-body a {
+.card-body a,
+.social-icon-rotate i {
     -webkit-transition: -webkit-transform .8s ease-in-out;
     transition: transform .3s ease-in-out;
 }
 
-.card-body a:hover {
+.card-body a:hover,
+.social-icon-rotate i:hover {
     -webkit-transform: rotate(360deg);
     transform: rotate(360deg);
 }
