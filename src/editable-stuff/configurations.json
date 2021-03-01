@@ -1,8 +1,3 @@
-var past_date = new Date('06/16/2020'); // Edit date (MM/DD/YYYY) to calculate experience
-var current_date = new Date();
-
-var experience = (current_date.getFullYear()*12 + current_date.getMonth()) - (past_date.getFullYear()*12 + past_date.getMonth());
-
 {
     "backgroundType": "gradient",
     "plainBackgroundMode": "daylight",
@@ -41,7 +36,7 @@ var experience = (current_date.getFullYear()*12 + current_date.getMonth()) - (pa
     "instaLink": "https://www.instagram.com/",
     "instaUsername": "anglesvar",
     "instaQuerry": "/?__a=1",
-    "aboutDescription": "Hi! I'm Anglesvar Chandrasekar Appiya, I'm a B.Tech Graduate from TamilNadu, India. I'm a Developer with" + experience +"  months of experience in Web Application development. I’m currently a Software Engineer at Chubb Business Service, India and a former Intern at Mallow Technologies, pvt. ltd. I follow autodidactism methodology and I'm always in hunger for new inspiring technologies. ❤",
+    "aboutDescription": "Hi! I'm Anglesvar Chandrasekar Appiya, I'm a B.Tech Graduate from TamilNadu, India. I'm a Developer with 9 months of experience in Web Application development. I’m currently a Software Engineer at Chubb Business Service, India and a former Intern at Mallow Technologies, pvt. ltd. I follow autodidactism methodology and I'm always in hunger for new inspiring technologies. ❤",
     "projectHeading": "My Works",
     "gitHubLink": "https://api.github.com/users/",
     "gitHubUsername": "anglesvar",
