@@ -1,0 +1,42 @@
+.myWorks-avatar-sizing{
+    max-width: 100%;
+    max-height: 100%;
+    margin: 150px 0 0 0;
+}
+
+.aboutMe-avatar-sizing{
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.contact-card{
+    background-image: url('/icZeplin.svg'), url("/bgPath.svg"), url("/bgPath.svg"), url("/bgPath.svg"), url("/bgPath.svg"), url("/bgPath.svg");
+    background-position: right calc(18.75vw + 18px) top 54px, top 43px right calc(18.75vw + 50px), top 43px right calc(18.75vw + 1256px), top 43px right calc(18.75vw + 2462px), top 43px right calc(18.75vw + 3668px), top 43px right calc(18.75vw + 4874px);
+    background-repeat: no-repeat;
+    padding-bottom: 30px;
+    .wrapper{
+        padding-top: 130px;
+        .contact-seperate-section{
+            margin: 0 !important;
+            div{
+                font-weight: 600;
+                font-size: 20px;
+                height: 120px;
+                margin-top: 10px;
+                padding: 0;
+            }
+    
+        }
+        @media (min-width: 768px){
+            .contact-seperate-section>div:first-child{
+                border-left: 1px solid rgb(221, 221, 221);
+                border-right: 1px solid rgb(221, 221, 221);
+            }
+        }
+    }
+    .icons{
+        padding-top: 20px;
+        text-align: center;
+    }
+}
+
