@@ -8,7 +8,7 @@
    ```
 
 3. Open in editor and edit [src/editable-stuff/configurations.json](./src/editable-stuff/configurations.json) file.
-4. Get a link for your resume by uploading it to any cloud storage of your choice. (AWS S3bucket, GDrive, etc.) [src/editable-stuff/resume.pdf](./src/editable-stuff/)
+4. Get a shareable link for your resume by uploading it to any cloud storage of your choice. (AWS S3bucket, GDrive, etc.) [src/editable-stuff/resume.pdf](./src/editable-stuff/)
 5. Edit [title](./public/index.html#L34) and meta [description](./public/index.html#L13) in [public/index.html](./public/index.html).
 6. Change URL in [package.json](./package.json) file:
 
@@ -38,4 +38,4 @@
       https://<your-username>.github.io
     ```
 
-Facing issues? Feel free to contact at hashirshoaeb@gmail.com.
+Facing issues? Feel free to contact at anglesvar.cheenu98@gmail.com.
