@@ -20,10 +20,7 @@
 }
 
 .projectBg {
-    background: linear-gradient( rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.5)), url('https://chubb-spotify.s3.ap-south-1.amazonaws.com/IMG-20180329-WA0007.jpg');
-    background-repeat: no-repeat;
-    background-position: 'right';
-    background-size: cover;
+    background-color: white;
 }
 
 @-webkit-keyframes AnimationName {
