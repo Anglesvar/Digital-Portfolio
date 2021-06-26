@@ -1,49 +1,16 @@
-import React, { useState, useEffect } from "react";
-import axios from "axios";
-import Pdf from "../../editable-stuff/resume.pdf";
+import React from "react";
 import {
   aboutHeading,
   aboutDescription,
-  showInstaProfilePic,
-  instaLink,
-  instaUsername,
-  instaQuerry,
+  resumeLink
 } from "../../editable-stuff/configurations.json";
 import Particles from "react-particles-js";
+import emoji from "react-easy-emoji";
 
 const AboutMe = () => {
-  const [instaProfilePic, setInstaProfilePic] = useState("");
-  const [showInsta, setShowInsta] = useState(showInstaProfilePic);
-  const [resumeURL] = useState(Pdf);
-
-  useEffect(() => {
-    if (showInsta) {
-      handleRequest();
-    }
-  }, [showInsta]);
-
-  const handleRequest = (e) => {
-    axios
-      .get(instaLink + instaUsername + instaQuerry)
-      .then((response) => {
-        // handle success
-        console.log(response.data.graphql);
-        return setInstaProfilePic(
-          "https://chubb-spotify.s3.ap-south-1.amazonaws.com/download.png"
-        );
-      })
-      .catch((error) => {
-        // handle error
-        setShowInsta(false);
-        return console.error(error.message);
-      })
-      .finally(() => {
-        // always executed
-      });
-  };
 
   return (
-    <div id="aboutme" className=" m-0 " style={{ height: "630px", paddingTop: "30px" }}>
+    <div id="aboutme" className=" m-0 " style={{ paddingTop: "30px" }}>
       <Particles
         style={{ color: "black", position: "absolute", height: "50%" }}
         params={{
@@ -149,15 +116,15 @@ const AboutMe = () => {
           "retina_detect": true
         }}
       />
-      <div className="container container-fluid p-5">
+      <div className="p-5">
+        <h1 className="display-4 mb-5 text-center">{aboutHeading}</h1>
         <div className="row">
-          <div className={`col-lg-${showInsta ? "7" : "12"}`}>
-            <h1 className="display-4 mb-5 text-center">{aboutHeading}</h1>
-            <p className="lead text-center">{aboutDescription}</p>
-            {resumeURL && (
+          <div className="col-md-5 mt-5">
+            <p className="lead text-center"><span>Hi!</span><span className="wave-emoji">{emoji("👋")}</span>{aboutDescription}</p>
+            {resumeLink && (
               <p className="lead text-center">
                 <a
-                  href={Pdf}
+                  href={resumeLink}
                   target="_blank"
                   rel="noreferrer noopener"
                   role="button"
@@ -170,15 +137,9 @@ const AboutMe = () => {
               </p>
             )}
           </div>
-          {showInsta && (
-            <div className="col-5 d-none d-lg-block align-self-center">
-              <img
-                className="border border-secondary image"
-                src={instaProfilePic}
-                alt="profilepicture"
-              />
-            </div>
-          )}
+          <div className="col-md-7">
+              <img className="aboutMe-avatar-sizing" src={process.env.PUBLIC_URL + 'programmer.svg'} alt="" />
+          </div>
         </div>
       </div>
     </div>

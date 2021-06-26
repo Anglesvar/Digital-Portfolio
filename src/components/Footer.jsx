@@ -19,7 +19,7 @@ const Footer = () => {
       <p>
         <small className="text-muted">
           {" "}
-          Project code is open source. You can fork it and make your own
+          This is an open-source project. You can fork it and make your own
           version.
         </small>
       </p>
