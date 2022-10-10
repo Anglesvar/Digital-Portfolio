@@ -2,9 +2,9 @@
     "backgroundType": "gradient",
     "plainBackgroundMode": "daylight",
     "gradientColors": "#EE7752, #E73C7E, #23A6D5, #23D5AB",
-    "FirstName": "Anglesvar",
-    "MiddleName": "Chandrasekar",
-    "LastName": "Appiya",
+    "FirstName": "Allen",
+    "MiddleName": "",
+    "LastName": "Yan",
     "devDesc": "| Engineer | Programmer | Full Stack Developer  ",
     "icons": [{
             "id": 0,
@@ -15,31 +15,31 @@
         {
             "id": 1,
             "image": "fa-facebook",
-            "url": "https://www.facebook.com/anglesvar.cheenu",
+            "url": "https://www.facebook.com/",
             "style": "socialicons"
         },
         {
             "id": 2,
             "image": "fa-instagram",
-            "url": "https://www.instagram.com/anglesvar",
+            "url": "https://www.instagram.com/",
             "style": "socialicons"
         },
         {
             "id": 3,
             "image": "fa-linkedin",
-            "url": "https://www.linkedin.com/in/anglesvar-chandrasekar-appiya-24338a110/",
+            "url": "https://www.linkedin.com/",
             "style": "socialicons"
         }
     ],
     "aboutHeading": "About Me",
-    "aboutDescription": "I'm Anglesvar Chandrasekar Appiya, a B.Tech Graduate from India. I'm a Developer with 2+ years of experience in Web Application development. I’m a Software Engineer at Chubb India. I'm always in hunger for new inspiring technologies.❤",
+    "aboutDescription": "I'm Allen Yan, a software developer",
     "projectHeading": "My Works",
     "gitHubLink": "https://api.github.com/users/",
-    "gitHubUsername": "anglesvar",
+    "gitHubUsername": "xiaoAllen1",
     "gitHubQuerry": "/repos?sort=created&direction=desc",
     "projectsLength": 4,
     "showNavigationbar": true,
-    "resumeLink": "https://angle-personal.s3.ap-south-1.amazonaws.com/ANGLESVAR's+Resume.pdf",
-    "mobileNumber": "9994578216",
-    "emailId": "anglesvar.cheenu98@gmail.com"
+    "resumeLink": "https://docs.google.com/document/u/1/d/e/2PACX-1vQvhekOawiaeHBGyJTfQiY7RMFNxPgzm9tFuy5gSfOzwOtprqTOgR5qcVAOypdX9YbBQRLG6b7Nr-pr/pub",
+    "mobileNumber": "888888888",
+    "emailId": "allenyan0817@gmail.com"
 }
