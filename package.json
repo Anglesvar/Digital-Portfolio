@@ -9,6 +9,9 @@
         "email": "anglesvar.cheenu98@gmail.com",
         "url": "https://github.com/anglesvar"
     },
+    "engines" : { 
+    "node" : ">=12.0.0 <14.0.0"
+    },
     "dependencies": {
         "@popperjs/core": "^2.1.1",
         "axios": "^0.19.2",
