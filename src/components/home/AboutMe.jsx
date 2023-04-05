@@ -1,17 +1,30 @@
 import React from "react";
+import { useCallback } from "react";
 import {
   aboutHeading,
   aboutDescription,
   resumeLink
 } from "../../editable-stuff/configurations.json";
-import Particles from "react-particles-js";
+import Particles from "react-tsparticles";
 import emoji from "react-easy-emoji";
+import { loadFull } from "tsparticles";
 
 const AboutMe = () => {
+
+  const particlesInit = useCallback(async engine => {
+    console.log(engine);
+      await loadFull(engine);
+  }, []);
+
+  const particlesLoaded = useCallback(async container => {
+    console.log(container);
+  }, []);
 
   return (
     <div id="aboutme" className=" m-0 " style={{ paddingTop: "30px" }}>
       <Particles
+        init={ particlesInit }
+        loaded={ particlesLoaded }
         style={{ color: "black", position: "absolute", height: "50%" }}
         params={{
           particles: {
