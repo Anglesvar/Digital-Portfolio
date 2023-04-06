@@ -38,4 +38,4 @@
       https://<your-username>.github.io
     ```
 
-Facing issues? Feel free to contact at anglesvar.cheenu98@gmail.com.
+Facing issues? Feel free to contact at rikshithkumar.2898@gmail.com.

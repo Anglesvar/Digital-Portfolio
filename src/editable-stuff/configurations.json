@@ -2,44 +2,44 @@
     "backgroundType": "gradient",
     "plainBackgroundMode": "daylight",
     "gradientColors": "#EE7752, #E73C7E, #23A6D5, #23D5AB",
-    "FirstName": "Anglesvar",
+    "FirstName": "Rikshith kumar",
     "MiddleName": "Chandrasekar",
     "LastName": "Appiya",
-    "devDesc": "| Engineer | Programmer | Full Stack Developer  ",
+    "devDesc": "| Engineer | Programmer",
     "icons": [{
             "id": 0,
             "image": "fa-github",
-            "url": "https://github.com/anglesvar",
+            "url": "https://github.com/rikshith",
             "style": "socialicons"
         },
         {
             "id": 1,
             "image": "fa-facebook",
-            "url": "https://www.facebook.com/anglesvar.cheenu",
+            "url": "https://www.facebook.com",
             "style": "socialicons"
         },
         {
             "id": 2,
             "image": "fa-instagram",
-            "url": "https://www.instagram.com/anglesvar",
+            "url": "https://www.instagram.com/rikshith28",
             "style": "socialicons"
         },
         {
             "id": 3,
             "image": "fa-linkedin",
-            "url": "https://www.linkedin.com/in/anglesvar-chandrasekar-appiya-24338a110/",
+            "url": "https://www.linkedin.com/in/rikshith-kumar-7949b4226/",
             "style": "socialicons"
         }
     ],
     "aboutHeading": "About Me",
-    "aboutDescription": "I'm Anglesvar Chandrasekar Appiya, a B.Tech Graduate from India. I'm a Developer with 2+ years of experience in Web Application development. I’m a Software Engineer at Chubb India. I'm always in hunger for new inspiring technologies.❤",
+    "aboutDescription": "I'm Rikshith kumar Chandrasekar Appiya, a B.Tech student from India. I'm a Developer in Web Application development. I'm always in hunger for new inspiring technologies.❤",
     "projectHeading": "My Works",
     "gitHubLink": "https://api.github.com/users/",
-    "gitHubUsername": "anglesvar",
+    "gitHubUsername": "rikshith",
     "gitHubQuerry": "/repos?sort=created&direction=desc",
     "projectsLength": 4,
     "showNavigationbar": true,
-    "resumeLink": "https://angle-personal.s3.ap-south-1.amazonaws.com/ANGLESVAR's+Resume.pdf",
-    "mobileNumber": "9994578216",
-    "emailId": "anglesvar.cheenu98@gmail.com"
+    "resumeLink": "",
+    "mobileNumber": "9042855163",
+    "emailId": "rikshithkumar.28@gmail.com"
 }
