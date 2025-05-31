@@ -1,6 +1,9 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import emoji from "react-easy-emoji";
-import { icons, mobileNumber, emailId } from "../editable-stuff/configurations.json";
+import icons from "../editable-stuff/configurations.json";
+import mobileNumber from "../editable-stuff/configurations.json";
+import emailId from "../editable-stuff/configurations.json";
+
 import '../common.scss';
 
 const Contact = () => {

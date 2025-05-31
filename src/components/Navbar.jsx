@@ -1,7 +1,7 @@
-import React, { useState, useEffect } from "react";
-import { FirstName, resumeLink } from "../editable-stuff/configurations.json";
+import { useState, useEffect } from "react";
+import editableStuff from "../editable-stuff/configurations.json";
 
-const Navbar = (props) => {
+const Navbar = () => {
   const [isTop, setIsTop] = useState(true);
   useEffect(() => {
     document.addEventListener("scroll", () => {
@@ -14,12 +14,11 @@ const Navbar = (props) => {
 
   return (
     <nav
-      className={`navbar navbar-expand-lg fixed-top navbar-light ${
-        isTop ? "bg-transparent" : "bg-gradient"
-      } `}
+      className={`navbar navbar-expand-lg fixed-top navbar-light ${isTop ? "bg-transparent" : "bg-gradient"
+        } `}
     >
-      <a className="navbar-brand" href={process.env.PUBLIC_URL + "/#home"}>
-        {`<${FirstName} />`}
+      <a className="navbar-brand" href={process.env.PUBLIC_URL + "/home"}>
+        {`<${editableStuff.FirstName} />`}
       </a>
       <a href="!#" className="logo"> </a>
       <button
@@ -39,25 +38,26 @@ const Navbar = (props) => {
           <li className="nav-item">
             <a
               className="nav-link lead"
-              href={process.env.PUBLIC_URL + "/#projects"}
+              href={process.env.PUBLIC_URL + "/projects"}
             >
               Projects
             </a>
           </li>
-          <li className="nav-item">
+          {editableStuff.resumeLink && <li className="nav-item">
             <a
               className="nav-link lead"
-              href={resumeLink}
+              href={editableStuff.resumeLink}
               target="_blank"
               rel="noreferrer noopener"
             >
               Resume
             </a>
           </li>
+          }
           <li className="nav-item">
             <a
               className="nav-link lead"
-              href={process.env.PUBLIC_URL + "/#aboutme"}
+              href={process.env.PUBLIC_URL + "/aboutme"}
             >
               About
             </a>

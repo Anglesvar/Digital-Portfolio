@@ -1,16 +1,11 @@
-import React, { useState } from "react";
-import Typist from "react-typist";
-import {
-  FirstName,
-  LastName,
-  MiddleName,
-  devDesc,
-  icons,
-} from "../../editable-stuff/configurations.json";
+import { useState } from "react";
+import Typist from "react-typist-component";
+import editableStuff from "../../editable-stuff/configurations.json"
+
 const MainBody = () => {
   // const [backgroundType, setBackgroundType] = useState(Configs.backgroundType);
   const [hoverstatus, setHoverstatus] = useState(
-    new Array(icons.length).fill("socialicons")
+    new Array(editableStuff.icons.length).fill("socialicons")
   );
 
   const toggleHover = (data) => {
@@ -33,12 +28,12 @@ const MainBody = () => {
       <div id="stars"></div>
       <div className="container container-fluid text-center ">
         <h6 className="display-4">
-          {FirstName + " " +MiddleName+" "+ LastName}
+          {editableStuff.FirstName + " " +editableStuff.MiddleName+" "+ editableStuff.LastName}
         </h6>
 
-        <Typist className="lead"> {devDesc}</Typist>
+        <Typist className="lead"> {editableStuff.devDesc}</Typist>
         <div className="p-5">
-          {icons.map((icon) => (
+          {editableStuff.icons.map((icon) => (
             <a
               key={icon.id}
               target="_blank"
@@ -55,7 +50,7 @@ const MainBody = () => {
             </a>
           ))}
         </div>
-        <a class="btn btn-slice" href="#aboutme" aria-label="Learn more about me">
+        <a class="btn btn-slice" href="aboutme" aria-label="Learn more about me">
         <div class="top"><span>More About me</span></div>
         <div class="bottom"><span>More About me</span></div>
       </a>

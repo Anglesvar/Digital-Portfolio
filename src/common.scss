@@ -10,7 +10,7 @@
 }
 
 .contact-card{
-    background-image: url('/icZeplin.svg'), url("/bgPath.svg"), url("/bgPath.svg"), url("/bgPath.svg"), url("/bgPath.svg"), url("/bgPath.svg");
+    background-image: url('../public/icZeplin.svg'), url("../public//bgPath.svg"), url("../public//bgPath.svg"), url("../public//bgPath.svg"), url("../public//bgPath.svg"), url("../public//bgPath.svg");
     background-position: right calc(18.75vw + 18px) top 54px, top 43px right calc(18.75vw + 50px), top 43px right calc(18.75vw + 1256px), top 43px right calc(18.75vw + 2462px), top 43px right calc(18.75vw + 3668px), top 43px right calc(18.75vw + 4874px);
     background-repeat: no-repeat;
     padding-bottom: 30px;

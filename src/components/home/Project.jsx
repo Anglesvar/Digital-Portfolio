@@ -1,37 +1,17 @@
-import React, { useState, useEffect, useCallback } from "react";
+import { useState, useEffect, useCallback } from "react";
 import axios from "axios";
 import GitCard from "./GitCard";
-import {
-	projectHeading,
-	gitHubLink,
-	gitHubUsername,
-	gitHubQuerry,
-	projectsLength,
-} from "../../editable-stuff/configurations.json";
-import Particles from "react-tsparticles";
+import editableStuff from "../../editable-stuff/configurations.json"
 import '../../common.scss';
-import { loadFull } from "tsparticles";
 
 const Project = () => {
-
-	const particlesInit = useCallback(async engine => {
-		console.log(engine);
-		// you can initiate the tsParticles instance (engine) here, adding custom shapes or presets
-		// this loads the tsparticles package bundle, it's the easiest method for getting everything ready
-		// starting from v2 you can add only the features you need reducing the bundle size
-		await loadFull(engine);
-	}, []);
-
-	const particlesLoaded = useCallback(async container => {
-		await console.log(container);
-	}, []);
 	const [projectsArray, setProjectsArray] = useState([]);
 
 	const handleRequest = useCallback((e) => {
 		axios
-			.get(gitHubLink + gitHubUsername + gitHubQuerry)
+			.get(editableStuff.gitHubLink +editableStuff.gitHubUsername + editableStuff.gitHubQuerry)
 			.then((response) => {
-				return setProjectsArray(response.data.slice(0, projectsLength));
+				return setProjectsArray(response.data.slice(0, editableStuff.projectsLength));
 			})
 			.catch((error) => {
 				return console.error(error.message);
@@ -43,66 +23,10 @@ const Project = () => {
 	}, [handleRequest]);
 
 	return (
-		<div id="projects" className="jumbotron jumbotron-fluid bg-transparent m-0 projectBg" style={{ background: "linear-gradient(169deg, black 69%, white 31%)", color: "white" }}>
-			<Particles style={{ zIndex: 0, position: "absolute" }}
-				init={ particlesInit }
-				loaded={ particlesLoaded }
-				height="180%"
-				params={{
-					"particles": {
-						"number": {
-							"value": 150,
-							"density": {
-								"enable": true
-							}
-						},
-						"size": {
-							"value": 3,
-							"random": true,
-							"anim": {
-								"speed": 4,
-								"size_min": 0.3
-							}
-						},
-						"line_linked": {
-							"enable": false
-						},
-						"move": {
-							"random": true,
-							"speed": 1,
-							"direction": "bottom",
-							"out_mode": "out"
-						}
-					},
-					"interactivity": {
-						"events": {
-							"onhover": {
-								"enable": true,
-								"mode": "repulse"
-							},
-							"onclick": {
-								"enable": true,
-								"mode": "repulse"
-							}
-						},
-						"modes": {
-							"bubble": {
-								"distance": 250,
-								"duration": 2,
-								"size": 0,
-								"opacity": 0
-							},
-							"repulse": {
-								"distance": 100,
-								"duration": 1
-							}
-						}
-					}
-				}}
-			/>
+		<div id="projects" className="jumbotron jumbotron-fluid bg-transparent m-0 projectBg" style={{ background: "linear-gradient(169deg, white 69%, white 31%)", color: "white" }}>
 			{projectsArray.length && (
 				<div className="m-2 p-3">
-					<h1 className="display-4 mb-5 text-center">{projectHeading}</h1>
+					<h1 className="display-4 mb-5 text-center">{editableStuff.projectHeading}</h1>
 					<div className="row flex-row-reverse">
 						<div className="col-md-5">
 							{projectsArray.map((project) => (
